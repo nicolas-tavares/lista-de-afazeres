@@ -1,0 +1,128 @@
+:root{
+    /* Variavéis de cor ja padronizadas para serem reutilizadas */
+    --cor-preta: rgb(14,14,14);
+    --cor-preta2: rgb(32, 32, 32);
+    --cor-preta3: rgb(22, 22, 22);
+    --cor-branca: #fff;
+    --cor-branca2: #c4b5b5;
+    --cor-verde: rgb(103,195,80);
+    --cor-verde2: rgb(51, 255, 0);
+    --cor-vermelha: rgb(184,40,35);
+    --cor-vermelha2: rgb(146,22,17);
+    --cor-laranja: rgb(219, 86, 46);
+    --cor-laranja2: rgb(255, 77, 0);
+}
+
+body{
+    font-family: 'Candara';
+    background-color: var(--cor-preta);     /* Cor fundo */
+    color: var(--cor-branca);     /* Cor fonte */
+    display: flex;     /* Tornar flexivel os elementos que foram adicionados no html */
+    flex-direction:column;     /* Determinar a posição dos elementos */
+    align-items: center;     /* Alinhar os itens da forma desejada */
+    gap: 2rem;       /* Espaçamento entre elementos */    /* 1rem = 16px */
+    
+}
+
+.cabecalho li{
+    padding: 15px;
+    margin-left: 1190px;   /* Margem do cabeçalho */
+    list-style-type: none;
+    display:flex;
+    flex-direction:row;
+}
+
+#espaco{
+    color: var(--cor-preta);
+    cursor: default;
+}
+
+
+.content{   /* lista */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+}
+
+.content--add-item{   /* input e botão */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;     /* determina se os elementos ficam na mesma linha ou não (utilizado caso abra o projeto no celular) */
+
+}
+
+#input-new-task,
+#button-new-task{
+    border: none;   /* Determina a borda (nesse caso, sem) */
+    outline: none;  /* Linha de fora (nesse caso, sem) */
+    font-size: 1rem; /* Tamanho da fonte */
+    padding: 1rem;  /* Distância entre o conteúdo de um elemento e sua borda */
+}
+
+#input-new-task{
+    width: 20rem; /* Largura */
+    border-radius: 3rem;  /* Raio da borda (O que deixa o formato redondo)*/
+}
+
+#button-new-task{
+    background-color: var(--cor-laranja);
+    color: var(--cor-branca);
+    width: 4rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;   /* Altura */
+    cursor:pointer; /* Como ficar o cursor ao passa-lo por cima do elemento */
+    transition: .4s; /* Tempo que vai demorar pro cursor mudar de default para o escolhido */
+}
+
+#button-new-task:hover{   /* Hover: o que acontece quando passa o cursor do mouse por cima */
+    background-color: var(--cor-laranja2);
+}
+
+#to-do-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+
+}
+
+#to-do-list li{
+    list-style-type: none;  /* Tipo da lista (•, -, 123 ...)*/
+    font-size: 1.4rem;
+    text-transform: capitalize;   /* Como a lista é realizada padronizada (nesse caso, sempre com letra maiúscula) */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;    /* Onde na tela vai ficar o elemento (space-between: joga os elementos pras extremidades)*/
+}
+
+#to-do-list li:hover{
+    background-color: var(--cor-preta3);
+    transition: .4s;
+    border-radius: 1rem;
+    padding-left: 1rem; /* Espaçamento para a esquerda */
+}
+
+#button-ok{ 
+    border: none;
+    color: var(--cor-branca);
+    background-color: var(--cor-verde);
+    font-size: 1rem;
+    padding: .4rem .8rem;  /* Quando se adiciona dois elementos, o primeiro (.4) é pra cima e pra baixo e o segundo (.8) é pra direita e esquerda */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    
+}
+
+#button-ok:hover{   
+    background-color: var(--cor-verde2);
+    transition: .4s;
+}
+
