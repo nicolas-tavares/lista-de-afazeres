@@ -21,7 +21,7 @@ body{
     flex-direction:column;     /* Determinar a posição dos elementos */
     align-items: center;     /* Alinhar os itens da forma desejada */
     gap: 2rem;       /* Espaçamento entre elementos */    /* 1rem = 16px */
-    
+    overflow: auto; /* Barra de rolagem á direita (auto: só aparecerá caso necessário)*/
 }
 
 .cabecalho li{
