@@ -1,6 +1,6 @@
 
-# to-do-list
-"To do list" with HTML, CSS and JavaScript
+# lista-de-afazeres
+"Lista de Afazeres" programado com HTML, CSS e JavaScript
 
 ===========================================
 
